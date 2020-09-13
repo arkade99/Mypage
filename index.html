@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+
+.navbar_top {
+  width: 50%;
+  background-color: #ffdb4d;
+  display: flex;
+    justify-content: space-between;
+  overflow: auto;
+  float: right;
+}
+
+.navbar_top a {
+  float: left;
+  padding: 5px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.6%; /* Four links of equal widths #ffdb4d */
+  text-align: center;
+}
+.navbar_top .logo{
+    width: 25%;
+    text-align: center;}
+
+.navbar_top_2 {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  overflow: auto;
+  border-bottom: 1px solid black;
+}
+
+.navbar_top_2 a {
+  float: left;
+  padding: 12px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 14.28%; /* Four links of equal widths */
+  text-align: center;
+}
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+  border-top: 1px solid black;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.6%; /* Four links of equal widths */
+  text-align: center;
+}
+.navbar2 {
+  width: 100%;
+  background-color: #cc0033;
+    color: white;
+    font-size: 16px;
+  padding-top: 15px;
+  overflow: auto;
+}
+
+.navbar2 a {
+  float: left;
+  padding: 5px;
+  text-decoration: none;
+  font-size:20px;
+  width: 33.3%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.arka i{
+  color:#fff;
+  font-size:35px;
+  text-align: center;
+  margin: 0.5rem;
+
+}
+@media screen and (max-width: 500px) {
+
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+  }
+  .navbar2 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  h1 {
+  width: 100%;
+}
+}
+@media screen and (max-width: 650px) {
+    .navbar_top{
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;}
+
+  .navbar_top a{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;}
+
+  .navbar_top_2{
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  .navbar_top_2 a{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid lightgray;}
+  }
+  @media screen and (max-width: 800px) {
+    .navbar_top{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;}
+  }
+  @media screen and (max-width: 330px){
+    h1{font-size:30px }
+  }
+  /* End of all Navbars */
+  /* For cards*/
+  .card {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  background: white;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 3rem;
+  position: relative;
+}
+.card-1 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.card-2 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-3 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-4 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.x img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-bottom: 10px;
+}
+
+.x h2 {
+    text-align: left;
+    font-size: 180%;
+    color: #cc0033;
+}
+.x h3 {
+    text-align: left;
+    font-size: 150%;
+    color: #ffdb4d;
+}
+.x h4 {
+    text-align: left;
+    font-size: 110%;
+    color: #cc0033
+}
+
+.button {
+   
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.btnone{
+    background-color: palevioletred;
+    color: white;
+
+    border-radius: 14px;
+    font-size: 110%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+</style>
+<body>
+<div class="navbar_top">
+            <a href="3rd page.html">Blog</a> 
+            <a href="21th page.html">Register As A Professional</a>
+            <a href="page2.html">Log In/Sign Up</a>
+          </div>
+<div class=" jumbotron text-center" style="background-color: #ffdb4d;">
+  <br><br>
+ <h1><b>Read.Learn.Relax</b></h1>
+ <br><br></div> 
+<div class="navbar_top_2">
+            <a ></a>
+            <a href=""><b>BEAUTY</b></a> 
+            <a href=""><b>LIFESTYLE</b></a>
+            <a href=""><b>INTERIORS</b></a> 
+            <a href=""><b>GARDENING</b></a>
+            <a href=""><b>TIPS</b></a>
+            <a ></a>
+</div>
+<!-- End of Top part -->
+<div class="container-fluid"  >
+<div class="row " style="margin-top:30px;">
+            <div class="card card-1 col-sm-5 x" style="color: white">
+            <img src="1.jpeg">
+                 <h2>Lorem Ipsum</h2>
+                <h3>Lorem Ipsum</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient. Lorem Ipsum is simply
+                dummy text of the printing and typesetting</h4></div>
+
+            <div class="card card-2 col-sm-5 x">
+                <img src="1.jpeg">
+                 <h2>Lorem Ipsum</h2>
+                <h3>Lorem Ipsum</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient. Lorem Ipsum is simply
+                dummy text of the printing and typesetting</h4></div>
+
+            <div class="card card-3 col-sm-5 x">
+                <img src="1.jpeg">
+                 <h2>Lorem Ipsum</h2>
+                <h3>Lorem Ipsum</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient. Lorem Ipsum is simply
+                dummy text of the printing and typesetting</h4>
+            </div>
+
+            <div class="card card-4 col-sm-5 x">
+                <img src="1.jpeg">
+                 <h2>Lorem Ipsum</h2>
+                <h3>Lorem Ipsum</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient. Lorem Ipsum is simply
+                dummy text of the printing and typesetting</h4>
+            </div>
+        </div>
+<div class="button">
+            <a href="" class="btnone"> Load More</a>
+        </div></div>
+<!-- End of middle part -->
+
+<div class="navbar">
+            <a href="4Aboutus.html">About</a> 
+            <a td href="20th page.html">Review</a>
+            <a href="">Careers</a>
+            <a href="5TNC.html">Terms & Condition </a> 
+            <a href="15.privacy.html">Privacy Policy</a>
+            <a href="6.contactus.html">Contact Us</a>
+</div>
+<div class="navbar2">
+            <a>Servies at your doorstep</a>
+            <a>Serve On Door Pvt. Ltd.</a>
+                <a class="arka">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+
+</body>
+</html> 
