@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>temp 3rd page Arka</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -89,6 +90,7 @@
   margin: 0.5rem;
 
 }
+
 @media screen and (max-width: 500px) {
 
   .navbar a {
@@ -147,14 +149,20 @@
     h1{font-size:30px }
   }
   /* End of all Navbars */
+  .section2 {
+    padding-top: 30px;
+    padding-left: 120px;
+}
   /* For cards*/
   .card {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   background: white;
   border-radius: 25px;
   display: inline-block;
+  height: 575px;
   margin: 3rem;
   position: relative;
+  width: 510px;
 }
 .card-1 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -170,14 +178,18 @@
 .card-4 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-.x img {
+.card img {
     width: 100%;
-    height: 350px;
+    height: 330px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding-bottom: 10px;
 }
 
+.x{
+  padding-left: 4.9%;
+    padding-top: 1px;
+}
 .x h2 {
     text-align: left;
     font-size: 180%;
@@ -211,6 +223,53 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+/* This is for card */
+@media screen and (max-width: 500px) {
+  .section2 {
+    padding-left: 3%;}
+
+  .card {
+  width: 70%;
+}
+.x img{
+  height: 250px;
+}
+
+.x h2{
+  font-size: 110%;
+}
+
+.x h3{
+  font-size: 100%;
+}
+.x h4{
+  font-size: 90%;
+}
+}
+@media screen and (max-width: 730px) {
+  .section2 {
+    padding-left: 5%;}
+
+  .card {
+  width: 75%;
+}
+.x img{
+  height: 250px;
+}
+
+.x h2{
+  font-size: 110%;
+}
+
+.x h3{
+  font-size: 100%;
+}
+.x h4{
+  font-size: 90%;
+}
+
+}
+
 </style>
 <body>
 <div class="navbar_top">
@@ -234,8 +293,21 @@
 <!-- End of Top part -->
 <div class="container-fluid"  >
 <div class="row " style="margin-top:30px;">
-            <div class="card card-1 col-sm-5 x" style="color: white">
+          <div class="section2">
+            <div class="card card-1" style="color: white">
             <img src="1.jpeg">
+            <div class="x">
+                 <h2>Lorem Ipsum</h2>
+                <h3>Lorem Ipsum</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et
+                magnis dis parturient. Lorem Ipsum is simply
+                dummy text of the printing and typesetting</h4></div></div>
+
+            <div class="card card-2">
+                <img src="1.jpeg">
+                 <div class="x">
                  <h2>Lorem Ipsum</h2>
                 <h3>Lorem Ipsum</h3>
                 <h4>Lorem ipsum dolor sit amet, consectetuer
@@ -243,9 +315,11 @@
                 Aenean massa. Cum sociis natoque penatibus et
                 magnis dis parturient. Lorem Ipsum is simply
                 dummy text of the printing and typesetting</h4></div>
+              </div>
 
-            <div class="card card-2 col-sm-5 x">
+            <div class="card card-3">
                 <img src="1.jpeg">
+                <div class="x">
                  <h2>Lorem Ipsum</h2>
                 <h3>Lorem Ipsum</h3>
                 <h4>Lorem ipsum dolor sit amet, consectetuer
@@ -253,29 +327,20 @@
                 Aenean massa. Cum sociis natoque penatibus et
                 magnis dis parturient. Lorem Ipsum is simply
                 dummy text of the printing and typesetting</h4></div>
+              </div>
 
-            <div class="card card-3 col-sm-5 x">
+            <div class="card card-4">
                 <img src="1.jpeg">
+                 <div class="x">
                  <h2>Lorem Ipsum</h2>
                 <h3>Lorem Ipsum</h3>
                 <h4>Lorem ipsum dolor sit amet, consectetuer
                 adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. Cum sociis natoque penatibus et
                 magnis dis parturient. Lorem Ipsum is simply
-                dummy text of the printing and typesetting</h4>
+                dummy text of the printing and typesetting</h4></div>
             </div>
-
-            <div class="card card-4 col-sm-5 x">
-                <img src="1.jpeg">
-                 <h2>Lorem Ipsum</h2>
-                <h3>Lorem Ipsum</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean massa. Cum sociis natoque penatibus et
-                magnis dis parturient. Lorem Ipsum is simply
-                dummy text of the printing and typesetting</h4>
-            </div>
-        </div>
+        </div></div>
 <div class="button">
             <a href="" class="btnone"> Load More</a>
         </div></div>
